@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.google.gson.JsonObject;
 import com.rkshoesrepair.shoe.formentityvo.SubmissionFormVo;
 import com.rkshoesrepair.shoe.formservice.SubmissionFormService;
 
@@ -17,6 +18,8 @@ public class SubmissionFormController {
 
     @Autowired
     private SubmissionFormService contactFormService;
+        
+	JsonObject result=new JsonObject();
 
     @PostMapping("/submit")
     public String submitContactForm(@RequestBody SubmissionFormVo submissionFormVo)

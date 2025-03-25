@@ -9,7 +9,7 @@ public class SubmissionFormVo
     private String email;
 
     private String subject;
-
+   
     private String message;
 
 	public Long getId() {

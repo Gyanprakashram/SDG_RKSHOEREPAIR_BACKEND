@@ -8,5 +8,5 @@ import com.rkshoesrepair.shoe.formentity.SubmissionFormEntity;
 @Repository
 public interface SubmissionFormRepo extends JpaRepository<SubmissionFormEntity, Long>
 {
-
+   
 }
